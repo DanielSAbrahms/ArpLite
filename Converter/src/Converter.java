@@ -30,11 +30,11 @@ public class Converter {
 
 
         System.out.println("{");
-        for (int i = 1; i < array.length; i++) {
+        for (int i = 0; i < array.length; i++) {
             System.out.print("{");
-            for (int j = 0; j < 8; j++) {
-                if (j != 7) System.out.print("B" + array[i][j+4] + ", ");
-                else System.out.print("B" + array[i][j+4]);
+            for (int j = 0; j < 9; j++) {
+                if (j != 8) System.out.print("B" + array[i][j+4] + ", ");
+                else System.out.print(array[i][j+4]);
             }
             System.out.println("},");
         }
